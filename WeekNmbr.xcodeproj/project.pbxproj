@@ -11,8 +11,23 @@
 		56A02CA31DD0724900B2FCE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A02CA21DD0724900B2FCE1 /* ViewController.swift */; };
 		56A02CA61DD0724900B2FCE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A02CA41DD0724900B2FCE1 /* Main.storyboard */; };
 		56A02CA81DD0724900B2FCE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A02CA71DD0724900B2FCE1 /* Assets.xcassets */; };
-		56A02CAB1DD0724900B2FCE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A02CA91DD0724900B2FCE1 /* LaunchScreen.storyboard */; };
 		56A02CB61DD0724900B2FCE1 /* WeekNmbrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A02CB51DD0724900B2FCE1 /* WeekNmbrTests.swift */; };
+		56A02CC61DD072D000B2FCE1 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A02CC41DD072D000B2FCE1 /* Interface.storyboard */; };
+		56A02CC81DD072D000B2FCE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A02CC71DD072D000B2FCE1 /* Assets.xcassets */; };
+		56A02CCF1DD072D000B2FCE1 /* WeekNmbrWatchApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 56A02CCE1DD072D000B2FCE1 /* WeekNmbrWatchApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		56A02CD61DD072D000B2FCE1 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A02CD51DD072D000B2FCE1 /* InterfaceController.swift */; };
+		56A02CD81DD072D000B2FCE1 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A02CD71DD072D000B2FCE1 /* ExtensionDelegate.swift */; };
+		56A02CDA1DD072D000B2FCE1 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A02CD91DD072D000B2FCE1 /* NotificationController.swift */; };
+		56A02CDC1DD072D000B2FCE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A02CDB1DD072D000B2FCE1 /* Assets.xcassets */; };
+		56A02CE01DD072D000B2FCE1 /* WeekNmbrWatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 56A02CC21DD072D000B2FCE1 /* WeekNmbrWatchApp.app */; };
+		56A02CEA1DD11DFD00B2FCE1 /* ComplicationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A02CE91DD11DFD00B2FCE1 /* ComplicationDataSource.swift */; };
+		56A02CED1DD25A0A00B2FCE1 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A02CEC1DD25A0A00B2FCE1 /* Extension.swift */; };
+		56A02CEE1DD25A0A00B2FCE1 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A02CEC1DD25A0A00B2FCE1 /* Extension.swift */; };
+		56A02CFE1DD26A9300B2FCE1 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A02CFD1DD26A9300B2FCE1 /* NotificationCenter.framework */; };
+		56A02D011DD26A9300B2FCE1 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A02D001DD26A9300B2FCE1 /* TodayViewController.swift */; };
+		56A02D041DD26A9300B2FCE1 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A02D021DD26A9300B2FCE1 /* MainInterface.storyboard */; };
+		56A02D091DD26A9300B2FCE1 /* WeekNmbrTodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 56A02CFB1DD26A9300B2FCE1 /* WeekNmbrTodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		56A02D0D1DD26B0500B2FCE1 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A02CEC1DD25A0A00B2FCE1 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +38,64 @@
 			remoteGlobalIDString = 56A02C9C1DD0724900B2FCE1;
 			remoteInfo = WeekNmbr;
 		};
+		56A02CD01DD072D000B2FCE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56A02C951DD0724900B2FCE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56A02CCD1DD072D000B2FCE1;
+			remoteInfo = "WeekNmbrWatchApp Extension";
+		};
+		56A02CDE1DD072D000B2FCE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56A02C951DD0724900B2FCE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56A02CC11DD072D000B2FCE1;
+			remoteInfo = WeekNmbrWatchApp;
+		};
+		56A02D061DD26A9300B2FCE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56A02C951DD0724900B2FCE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56A02CFA1DD26A9300B2FCE1;
+			remoteInfo = WeekNmbrTodayExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		56A02CE41DD072D000B2FCE1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				56A02CCF1DD072D000B2FCE1 /* WeekNmbrWatchApp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A02CE81DD072D000B2FCE1 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				56A02CE01DD072D000B2FCE1 /* WeekNmbrWatchApp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A02D081DD26A9300B2FCE1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				56A02D091DD26A9300B2FCE1 /* WeekNmbrTodayExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		56A02C9D1DD0724900B2FCE1 /* WeekNmbr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeekNmbr.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,11 +103,28 @@
 		56A02CA21DD0724900B2FCE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		56A02CA51DD0724900B2FCE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56A02CA71DD0724900B2FCE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		56A02CAA1DD0724900B2FCE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56A02CAC1DD0724900B2FCE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56A02CB11DD0724900B2FCE1 /* WeekNmbrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeekNmbrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A02CB51DD0724900B2FCE1 /* WeekNmbrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekNmbrTests.swift; sourceTree = "<group>"; };
 		56A02CB71DD0724900B2FCE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56A02CC21DD072D000B2FCE1 /* WeekNmbrWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeekNmbrWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A02CC51DD072D000B2FCE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		56A02CC71DD072D000B2FCE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56A02CC91DD072D000B2FCE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56A02CCE1DD072D000B2FCE1 /* WeekNmbrWatchApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WeekNmbrWatchApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A02CD41DD072D000B2FCE1 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		56A02CD51DD072D000B2FCE1 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		56A02CD71DD072D000B2FCE1 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		56A02CD91DD072D000B2FCE1 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		56A02CDB1DD072D000B2FCE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56A02CDD1DD072D000B2FCE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56A02CE91DD11DFD00B2FCE1 /* ComplicationDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplicationDataSource.swift; sourceTree = "<group>"; };
+		56A02CEC1DD25A0A00B2FCE1 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		56A02CFB1DD26A9300B2FCE1 /* WeekNmbrTodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WeekNmbrTodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A02CFD1DD26A9300B2FCE1 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		56A02D001DD26A9300B2FCE1 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		56A02D031DD26A9300B2FCE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		56A02D051DD26A9300B2FCE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,14 +142,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		56A02CCB1DD072D000B2FCE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A02CF81DD26A9300B2FCE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A02CFE1DD26A9300B2FCE1 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		56A02C941DD0724900B2FCE1 = {
 			isa = PBXGroup;
 			children = (
+				56A02CEB1DD259B000B2FCE1 /* Common */,
 				56A02C9F1DD0724900B2FCE1 /* WeekNmbr */,
 				56A02CB41DD0724900B2FCE1 /* WeekNmbrTests */,
+				56A02CC31DD072D000B2FCE1 /* WeekNmbrWatchApp */,
+				56A02CD21DD072D000B2FCE1 /* WeekNmbrWatchApp Extension */,
+				56A02CFF1DD26A9300B2FCE1 /* WeekNmbrTodayExtension */,
+				56A02CFC1DD26A9300B2FCE1 /* Frameworks */,
 				56A02C9E1DD0724900B2FCE1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +179,9 @@
 			children = (
 				56A02C9D1DD0724900B2FCE1 /* WeekNmbr.app */,
 				56A02CB11DD0724900B2FCE1 /* WeekNmbrTests.xctest */,
+				56A02CC21DD072D000B2FCE1 /* WeekNmbrWatchApp.app */,
+				56A02CCE1DD072D000B2FCE1 /* WeekNmbrWatchApp Extension.appex */,
+				56A02CFB1DD26A9300B2FCE1 /* WeekNmbrTodayExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,7 +193,6 @@
 				56A02CA21DD0724900B2FCE1 /* ViewController.swift */,
 				56A02CA41DD0724900B2FCE1 /* Main.storyboard */,
 				56A02CA71DD0724900B2FCE1 /* Assets.xcassets */,
-				56A02CA91DD0724900B2FCE1 /* LaunchScreen.storyboard */,
 				56A02CAC1DD0724900B2FCE1 /* Info.plist */,
 			);
 			path = WeekNmbr;
@@ -96,6 +207,64 @@
 			path = WeekNmbrTests;
 			sourceTree = "<group>";
 		};
+		56A02CC31DD072D000B2FCE1 /* WeekNmbrWatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				56A02CC41DD072D000B2FCE1 /* Interface.storyboard */,
+				56A02CC71DD072D000B2FCE1 /* Assets.xcassets */,
+				56A02CC91DD072D000B2FCE1 /* Info.plist */,
+			);
+			path = WeekNmbrWatchApp;
+			sourceTree = "<group>";
+		};
+		56A02CD21DD072D000B2FCE1 /* WeekNmbrWatchApp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				56A02CD51DD072D000B2FCE1 /* InterfaceController.swift */,
+				56A02CD71DD072D000B2FCE1 /* ExtensionDelegate.swift */,
+				56A02CD91DD072D000B2FCE1 /* NotificationController.swift */,
+				56A02CDB1DD072D000B2FCE1 /* Assets.xcassets */,
+				56A02CDD1DD072D000B2FCE1 /* Info.plist */,
+				56A02CD31DD072D000B2FCE1 /* Supporting Files */,
+				56A02CE91DD11DFD00B2FCE1 /* ComplicationDataSource.swift */,
+			);
+			path = "WeekNmbrWatchApp Extension";
+			sourceTree = "<group>";
+		};
+		56A02CD31DD072D000B2FCE1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				56A02CD41DD072D000B2FCE1 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56A02CEB1DD259B000B2FCE1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				56A02CEC1DD25A0A00B2FCE1 /* Extension.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		56A02CFC1DD26A9300B2FCE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56A02CFD1DD26A9300B2FCE1 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56A02CFF1DD26A9300B2FCE1 /* WeekNmbrTodayExtension */ = {
+			isa = PBXGroup;
+			children = (
+				56A02D001DD26A9300B2FCE1 /* TodayViewController.swift */,
+				56A02D021DD26A9300B2FCE1 /* MainInterface.storyboard */,
+				56A02D051DD26A9300B2FCE1 /* Info.plist */,
+			);
+			path = WeekNmbrTodayExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,10 +275,15 @@
 				56A02C991DD0724900B2FCE1 /* Sources */,
 				56A02C9A1DD0724900B2FCE1 /* Frameworks */,
 				56A02C9B1DD0724900B2FCE1 /* Resources */,
+				56A02CE81DD072D000B2FCE1 /* Embed Watch Content */,
+				56A02CF01DD2640500B2FCE1 /* ShellScript */,
+				56A02D081DD26A9300B2FCE1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				56A02CDF1DD072D000B2FCE1 /* PBXTargetDependency */,
+				56A02D071DD26A9300B2FCE1 /* PBXTargetDependency */,
 			);
 			name = WeekNmbr;
 			productName = WeekNmbr;
@@ -134,6 +308,57 @@
 			productReference = 56A02CB11DD0724900B2FCE1 /* WeekNmbrTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		56A02CC11DD072D000B2FCE1 /* WeekNmbrWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56A02CE51DD072D000B2FCE1 /* Build configuration list for PBXNativeTarget "WeekNmbrWatchApp" */;
+			buildPhases = (
+				56A02CC01DD072D000B2FCE1 /* Resources */,
+				56A02CE41DD072D000B2FCE1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56A02CD11DD072D000B2FCE1 /* PBXTargetDependency */,
+			);
+			name = WeekNmbrWatchApp;
+			productName = WeekNmbrWatchApp;
+			productReference = 56A02CC21DD072D000B2FCE1 /* WeekNmbrWatchApp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		56A02CCD1DD072D000B2FCE1 /* WeekNmbrWatchApp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56A02CE11DD072D000B2FCE1 /* Build configuration list for PBXNativeTarget "WeekNmbrWatchApp Extension" */;
+			buildPhases = (
+				56A02CCA1DD072D000B2FCE1 /* Sources */,
+				56A02CCB1DD072D000B2FCE1 /* Frameworks */,
+				56A02CCC1DD072D000B2FCE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WeekNmbrWatchApp Extension";
+			productName = "WeekNmbrWatchApp Extension";
+			productReference = 56A02CCE1DD072D000B2FCE1 /* WeekNmbrWatchApp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		56A02CFA1DD26A9300B2FCE1 /* WeekNmbrTodayExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56A02D0A1DD26A9300B2FCE1 /* Build configuration list for PBXNativeTarget "WeekNmbrTodayExtension" */;
+			buildPhases = (
+				56A02CF71DD26A9300B2FCE1 /* Sources */,
+				56A02CF81DD26A9300B2FCE1 /* Frameworks */,
+				56A02CF91DD26A9300B2FCE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeekNmbrTodayExtension;
+			productName = WeekNmbrTodayExtension;
+			productReference = 56A02CFB1DD26A9300B2FCE1 /* WeekNmbrTodayExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -155,6 +380,21 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 56A02C9C1DD0724900B2FCE1;
 					};
+					56A02CC11DD072D000B2FCE1 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = YU4AFJ6SHS;
+						ProvisioningStyle = Automatic;
+					};
+					56A02CCD1DD072D000B2FCE1 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = YU4AFJ6SHS;
+						ProvisioningStyle = Automatic;
+					};
+					56A02CFA1DD26A9300B2FCE1 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = YU4AFJ6SHS;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 56A02C981DD0724900B2FCE1 /* Build configuration list for PBXProject "WeekNmbr" */;
@@ -172,6 +412,9 @@
 			targets = (
 				56A02C9C1DD0724900B2FCE1 /* WeekNmbr */,
 				56A02CB01DD0724900B2FCE1 /* WeekNmbrTests */,
+				56A02CC11DD072D000B2FCE1 /* WeekNmbrWatchApp */,
+				56A02CCD1DD072D000B2FCE1 /* WeekNmbrWatchApp Extension */,
+				56A02CFA1DD26A9300B2FCE1 /* WeekNmbrTodayExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -181,7 +424,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56A02CAB1DD0724900B2FCE1 /* LaunchScreen.storyboard in Resources */,
 				56A02CA81DD0724900B2FCE1 /* Assets.xcassets in Resources */,
 				56A02CA61DD0724900B2FCE1 /* Main.storyboard in Resources */,
 			);
@@ -194,13 +436,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		56A02CC01DD072D000B2FCE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A02CC81DD072D000B2FCE1 /* Assets.xcassets in Resources */,
+				56A02CC61DD072D000B2FCE1 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A02CCC1DD072D000B2FCE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A02CDC1DD072D000B2FCE1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A02CF91DD26A9300B2FCE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A02D041DD26A9300B2FCE1 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56A02CF01DD2640500B2FCE1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		56A02C991DD0724900B2FCE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56A02CED1DD25A0A00B2FCE1 /* Extension.swift in Sources */,
 				56A02CA31DD0724900B2FCE1 /* ViewController.swift in Sources */,
 				56A02CA11DD0724900B2FCE1 /* AppDelegate.swift in Sources */,
 			);
@@ -214,6 +498,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		56A02CCA1DD072D000B2FCE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A02CEE1DD25A0A00B2FCE1 /* Extension.swift in Sources */,
+				56A02CEA1DD11DFD00B2FCE1 /* ComplicationDataSource.swift in Sources */,
+				56A02CDA1DD072D000B2FCE1 /* NotificationController.swift in Sources */,
+				56A02CD81DD072D000B2FCE1 /* ExtensionDelegate.swift in Sources */,
+				56A02CD61DD072D000B2FCE1 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A02CF71DD26A9300B2FCE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A02D011DD26A9300B2FCE1 /* TodayViewController.swift in Sources */,
+				56A02D0D1DD26B0500B2FCE1 /* Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -221,6 +526,21 @@
 			isa = PBXTargetDependency;
 			target = 56A02C9C1DD0724900B2FCE1 /* WeekNmbr */;
 			targetProxy = 56A02CB21DD0724900B2FCE1 /* PBXContainerItemProxy */;
+		};
+		56A02CD11DD072D000B2FCE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56A02CCD1DD072D000B2FCE1 /* WeekNmbrWatchApp Extension */;
+			targetProxy = 56A02CD01DD072D000B2FCE1 /* PBXContainerItemProxy */;
+		};
+		56A02CDF1DD072D000B2FCE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56A02CC11DD072D000B2FCE1 /* WeekNmbrWatchApp */;
+			targetProxy = 56A02CDE1DD072D000B2FCE1 /* PBXContainerItemProxy */;
+		};
+		56A02D071DD26A9300B2FCE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56A02CFA1DD26A9300B2FCE1 /* WeekNmbrTodayExtension */;
+			targetProxy = 56A02D061DD26A9300B2FCE1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -233,12 +553,20 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		56A02CA91DD0724900B2FCE1 /* LaunchScreen.storyboard */ = {
+		56A02CC41DD072D000B2FCE1 /* Interface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				56A02CAA1DD0724900B2FCE1 /* Base */,
+				56A02CC51DD072D000B2FCE1 /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		56A02D021DD26A9300B2FCE1 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56A02D031DD26A9300B2FCE1 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -338,11 +666,17 @@
 		56A02CBB1DD0724900B2FCE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YU4AFJ6SHS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = WeekNmbr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.studiowannabe.WeekNmbr;
+				PRODUCT_BUNDLE_IDENTIFIER = fi.solita.WeekNmbr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -351,11 +685,17 @@
 		56A02CBC1DD0724900B2FCE1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YU4AFJ6SHS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = WeekNmbr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.studiowannabe.WeekNmbr;
+				PRODUCT_BUNDLE_IDENTIFIER = fi.solita.WeekNmbr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -391,6 +731,110 @@
 			};
 			name = Release;
 		};
+		56A02CE21DD072D000B2FCE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = YU4AFJ6SHS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "WeekNmbrWatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fi.solita.WeekNmbr.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		56A02CE31DD072D000B2FCE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = YU4AFJ6SHS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "WeekNmbrWatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fi.solita.WeekNmbr.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		56A02CE61DD072D000B2FCE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YU4AFJ6SHS;
+				IBSC_MODULE = WeekNmbrWatchApp_Extension;
+				INFOPLIST_FILE = WeekNmbrWatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = fi.solita.WeekNmbr.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		56A02CE71DD072D000B2FCE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YU4AFJ6SHS;
+				IBSC_MODULE = WeekNmbrWatchApp_Extension;
+				INFOPLIST_FILE = WeekNmbrWatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = fi.solita.WeekNmbr.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		56A02D0B1DD26A9300B2FCE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = YU4AFJ6SHS;
+				INFOPLIST_FILE = WeekNmbrTodayExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fi.solita.WeekNmbr.WeekNmbrTodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		56A02D0C1DD26A9300B2FCE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = YU4AFJ6SHS;
+				INFOPLIST_FILE = WeekNmbrTodayExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fi.solita.WeekNmbr.WeekNmbrTodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -416,6 +860,30 @@
 			buildConfigurations = (
 				56A02CBE1DD0724900B2FCE1 /* Debug */,
 				56A02CBF1DD0724900B2FCE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		56A02CE11DD072D000B2FCE1 /* Build configuration list for PBXNativeTarget "WeekNmbrWatchApp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56A02CE21DD072D000B2FCE1 /* Debug */,
+				56A02CE31DD072D000B2FCE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		56A02CE51DD072D000B2FCE1 /* Build configuration list for PBXNativeTarget "WeekNmbrWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56A02CE61DD072D000B2FCE1 /* Debug */,
+				56A02CE71DD072D000B2FCE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		56A02D0A1DD26A9300B2FCE1 /* Build configuration list for PBXNativeTarget "WeekNmbrTodayExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56A02D0B1DD26A9300B2FCE1 /* Debug */,
+				56A02D0C1DD26A9300B2FCE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

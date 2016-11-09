@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeekNmbr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,69 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kq-C9-EPa">
+                                <rect key="frame" x="-0.5" y="133.5" width="375" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="gnU-NK-cGt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="123"/>
+                                <color key="textColor" red="0.75686274509803919" green="0.21568627450980393" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYN-Cm-6NB">
+                                <rect key="frame" x="-0.5" y="75.5" width="375" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.75686274509803919" green="0.21568627450980393" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qmM-GT-2U6">
+                                <rect key="frame" x="16" y="519" width="343" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.75686274509803919" green="0.21568627450980393" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000298023224" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="69V-hz-8jf">
+                                <rect key="frame" x="144.5" y="471" width="87.5" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.75686274509803919" green="0.21568627450980393" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/365" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000298023224" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jgv-3b-M0K" userLabel="Day of year">
+                                <rect key="frame" x="136.5" y="243.5" width="102.5" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.75686274509999996" green="0.2156862745" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.83529411760000005" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5kq-C9-EPa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-150" id="4p9-31-uF5"/>
+                            <constraint firstItem="jgv-3b-M0K" firstAttribute="top" secondItem="5kq-C9-EPa" secondAttribute="bottom" constant="10" id="I4a-9a-qY9"/>
+                            <constraint firstItem="qmM-GT-2U6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-32" id="JxR-Vt-kF7"/>
+                            <constraint firstItem="69V-hz-8jf" firstAttribute="bottom" secondItem="qmM-GT-2U6" secondAttribute="top" id="Pg7-Zz-U5J"/>
+                            <constraint firstItem="5kq-C9-EPa" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="QHx-oI-FP0"/>
+                            <constraint firstItem="YYN-Cm-6NB" firstAttribute="bottom" secondItem="5kq-C9-EPa" secondAttribute="top" constant="-10" id="SJi-ZK-BK9"/>
+                            <constraint firstItem="YYN-Cm-6NB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TiU-qo-Ria"/>
+                            <constraint firstItem="jgv-3b-M0K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VE3-C0-OIT"/>
+                            <constraint firstItem="qmM-GT-2U6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VY5-yq-7Ho"/>
+                            <constraint firstItem="69V-hz-8jf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WJ7-iW-5F8"/>
+                            <constraint firstItem="qmM-GT-2U6" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" constant="-100" id="gnN-6P-8J8"/>
+                            <constraint firstItem="5kq-C9-EPa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v1a-Dx-btV"/>
+                            <constraint firstItem="YYN-Cm-6NB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="wNe-nb-fcc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="qmM-GT-2U6" id="EGE-fj-h4M"/>
+                        <outlet property="dayOfYear" destination="jgv-3b-M0K" id="R27-sM-sFv"/>
+                        <outlet property="timeLabel" destination="69V-hz-8jf" id="2gW-dY-F27"/>
+                        <outlet property="weekNumber" destination="5kq-C9-EPa" id="J2d-he-S7f"/>
+                        <outlet property="weekNumberLabel" destination="YYN-Cm-6NB" id="rbn-ro-EAW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-841" y="25"/>
         </scene>
     </scenes>
 </document>
