@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		566B64441DD51C55009C6B3B /* IndexRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566B64431DD51C55009C6B3B /* IndexRequestHandler.swift */; };
+		566B64481DD51C55009C6B3B /* WeekNmbrSpotlightExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 566B64411DD51C55009C6B3B /* WeekNmbrSpotlightExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		566B644C1DD51CBC009C6B3B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A02CEC1DD25A0A00B2FCE1 /* Extension.swift */; };
 		56A02CA11DD0724900B2FCE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A02CA01DD0724900B2FCE1 /* AppDelegate.swift */; };
 		56A02CA31DD0724900B2FCE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A02CA21DD0724900B2FCE1 /* ViewController.swift */; };
 		56A02CA61DD0724900B2FCE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A02CA41DD0724900B2FCE1 /* Main.storyboard */; };
@@ -31,6 +34,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		566B64461DD51C55009C6B3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56A02C951DD0724900B2FCE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 566B64401DD51C55009C6B3B;
+			remoteInfo = WeekNmbrSpotlightExtension;
+		};
 		56A02CB21DD0724900B2FCE1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 56A02C951DD0724900B2FCE1 /* Project object */;
@@ -90,6 +100,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				566B64481DD51C55009C6B3B /* WeekNmbrSpotlightExtension.appex in Embed App Extensions */,
 				56A02D091DD26A9300B2FCE1 /* WeekNmbrTodayExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -98,6 +109,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		566B64411DD51C55009C6B3B /* WeekNmbrSpotlightExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WeekNmbrSpotlightExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		566B64431DD51C55009C6B3B /* IndexRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexRequestHandler.swift; sourceTree = "<group>"; };
+		566B64451DD51C55009C6B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56A02C9D1DD0724900B2FCE1 /* WeekNmbr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeekNmbr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A02CA01DD0724900B2FCE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56A02CA21DD0724900B2FCE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +142,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		566B643E1DD51C55009C6B3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		56A02C9A1DD0724900B2FCE1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,6 +181,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		566B64421DD51C55009C6B3B /* WeekNmbrSpotlightExtension */ = {
+			isa = PBXGroup;
+			children = (
+				566B64431DD51C55009C6B3B /* IndexRequestHandler.swift */,
+				566B64451DD51C55009C6B3B /* Info.plist */,
+			);
+			path = WeekNmbrSpotlightExtension;
+			sourceTree = "<group>";
+		};
 		56A02C941DD0724900B2FCE1 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +199,7 @@
 				56A02CC31DD072D000B2FCE1 /* WeekNmbrWatchApp */,
 				56A02CD21DD072D000B2FCE1 /* WeekNmbrWatchApp Extension */,
 				56A02CFF1DD26A9300B2FCE1 /* WeekNmbrTodayExtension */,
+				566B64421DD51C55009C6B3B /* WeekNmbrSpotlightExtension */,
 				56A02CFC1DD26A9300B2FCE1 /* Frameworks */,
 				56A02C9E1DD0724900B2FCE1 /* Products */,
 			);
@@ -182,6 +213,7 @@
 				56A02CC21DD072D000B2FCE1 /* WeekNmbrWatchApp.app */,
 				56A02CCE1DD072D000B2FCE1 /* WeekNmbrWatchApp Extension.appex */,
 				56A02CFB1DD26A9300B2FCE1 /* WeekNmbrTodayExtension.appex */,
+				566B64411DD51C55009C6B3B /* WeekNmbrSpotlightExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -268,6 +300,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		566B64401DD51C55009C6B3B /* WeekNmbrSpotlightExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 566B64491DD51C55009C6B3B /* Build configuration list for PBXNativeTarget "WeekNmbrSpotlightExtension" */;
+			buildPhases = (
+				566B643D1DD51C55009C6B3B /* Sources */,
+				566B643E1DD51C55009C6B3B /* Frameworks */,
+				566B643F1DD51C55009C6B3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeekNmbrSpotlightExtension;
+			productName = WeekNmbrSpotlightExtension;
+			productReference = 566B64411DD51C55009C6B3B /* WeekNmbrSpotlightExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		56A02C9C1DD0724900B2FCE1 /* WeekNmbr */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56A02CBA1DD0724900B2FCE1 /* Build configuration list for PBXNativeTarget "WeekNmbr" */;
@@ -284,6 +333,7 @@
 			dependencies = (
 				56A02CDF1DD072D000B2FCE1 /* PBXTargetDependency */,
 				56A02D071DD26A9300B2FCE1 /* PBXTargetDependency */,
+				566B64471DD51C55009C6B3B /* PBXTargetDependency */,
 			);
 			name = WeekNmbr;
 			productName = WeekNmbr;
@@ -369,6 +419,11 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Tomi Lahtinen";
 				TargetAttributes = {
+					566B64401DD51C55009C6B3B = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = YU4AFJ6SHS;
+						ProvisioningStyle = Automatic;
+					};
 					56A02C9C1DD0724900B2FCE1 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = YU4AFJ6SHS;
@@ -415,11 +470,19 @@
 				56A02CC11DD072D000B2FCE1 /* WeekNmbrWatchApp */,
 				56A02CCD1DD072D000B2FCE1 /* WeekNmbrWatchApp Extension */,
 				56A02CFA1DD26A9300B2FCE1 /* WeekNmbrTodayExtension */,
+				566B64401DD51C55009C6B3B /* WeekNmbrSpotlightExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		566B643F1DD51C55009C6B3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		56A02C9B1DD0724900B2FCE1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -480,6 +543,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		566B643D1DD51C55009C6B3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				566B64441DD51C55009C6B3B /* IndexRequestHandler.swift in Sources */,
+				566B644C1DD51CBC009C6B3B /* Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		56A02C991DD0724900B2FCE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -522,6 +594,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		566B64471DD51C55009C6B3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 566B64401DD51C55009C6B3B /* WeekNmbrSpotlightExtension */;
+			targetProxy = 566B64461DD51C55009C6B3B /* PBXContainerItemProxy */;
+		};
 		56A02CB31DD0724900B2FCE1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 56A02C9C1DD0724900B2FCE1 /* WeekNmbr */;
@@ -572,6 +649,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		566B644A1DD51C55009C6B3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = YU4AFJ6SHS;
+				INFOPLIST_FILE = WeekNmbrSpotlightExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fi.solita.WeekNmbr.WeekNmbrSpotlightExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		566B644B1DD51C55009C6B3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = YU4AFJ6SHS;
+				INFOPLIST_FILE = WeekNmbrSpotlightExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fi.solita.WeekNmbr.WeekNmbrSpotlightExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		56A02CB81DD0724900B2FCE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -838,6 +941,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		566B64491DD51C55009C6B3B /* Build configuration list for PBXNativeTarget "WeekNmbrSpotlightExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				566B644A1DD51C55009C6B3B /* Debug */,
+				566B644B1DD51C55009C6B3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		56A02C981DD0724900B2FCE1 /* Build configuration list for PBXProject "WeekNmbr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -854,6 +965,7 @@
 				56A02CBC1DD0724900B2FCE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56A02CBD1DD0724900B2FCE1 /* Build configuration list for PBXNativeTarget "WeekNmbrTests" */ = {
 			isa = XCConfigurationList;
@@ -862,6 +974,7 @@
 				56A02CBF1DD0724900B2FCE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56A02CE11DD072D000B2FCE1 /* Build configuration list for PBXNativeTarget "WeekNmbrWatchApp Extension" */ = {
 			isa = XCConfigurationList;
@@ -870,6 +983,7 @@
 				56A02CE31DD072D000B2FCE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56A02CE51DD072D000B2FCE1 /* Build configuration list for PBXNativeTarget "WeekNmbrWatchApp" */ = {
 			isa = XCConfigurationList;
@@ -878,6 +992,7 @@
 				56A02CE71DD072D000B2FCE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56A02D0A1DD26A9300B2FCE1 /* Build configuration list for PBXNativeTarget "WeekNmbrTodayExtension" */ = {
 			isa = XCConfigurationList;
@@ -886,6 +1001,7 @@
 				56A02D0C1DD26A9300B2FCE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

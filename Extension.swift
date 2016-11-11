@@ -25,4 +25,9 @@ extension Date {
         let endOfInterval = self.addingTimeInterval(lengthOfInterval)
         return Calendar.current.dateComponents(Set<Calendar.Component>([.day]), from: self, to: endOfInterval).day!
     }
+    
+    
+    func endOfDay() -> Date {
+        return Calendar.current.date(bySettingHour: 23, minute: 59, second: 59, of: self)!
+    }
 }

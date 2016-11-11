@@ -6,17 +6,26 @@
 //  Copyright © 2016 Tomi Lahtinen. All rights reserved.
 //
 
+import Foundation
 import UIKit
-
+import CoreSpotlight
+import MobileCoreServices
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
         // Override point for customization after application launch.
+        return true
+    }
+    
+    public func application(_ application: UIApplication, willContinueUserActivityWithType userActivityType: String) -> Bool {
+        if userActivity?.activityType == CSSearchableItemActionType {
+        
+        }
         return true
     }
 
@@ -41,7 +50,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
 
 }
 
