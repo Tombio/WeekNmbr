@@ -10,12 +10,22 @@ import Foundation
 
 extension Date {
     
+    private static let dayNameShort: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "EE"
+        return formatter
+    }()
+    
     func weekNumberOfYear() -> Int {
         return Calendar.current.dateComponents([.weekOfYear], from: self).weekOfYear!
     }
     
     func dayOfYear() -> Int {
         return Calendar.current.ordinality(of: .day, in: .year, for: self)!
+    }
+    
+    func dayOfMonth() -> Int {
+        return Calendar.current.ordinality(of: .day, in: .month, for: self)!
     }
     
     func daysInYear() -> Int {
@@ -29,5 +39,37 @@ extension Date {
     
     func endOfDay() -> Date {
         return Calendar.current.date(bySettingHour: 23, minute: 59, second: 59, of: self)!
+    }
+    
+    func startOfday() -> Date {
+        return Calendar.current.date(bySettingHour: 0, minute: 0, second: 0, of: self)!
+    }
+    
+    func shortDateName() -> String {
+        let str = Date.dayNameShort.string(from: self)
+        let index = str.index(str.startIndex, offsetBy: 2)
+        return str.substring(to: index)
+    }
+    
+    func yesterday() -> Date {
+        var dateComponents = DateComponents()
+        dateComponents.day = -1
+        return Calendar.current.date(byAdding: dateComponents, to: self)!
+    }
+    
+    func tomorrow() -> Date {
+        var dateComponents = DateComponents()
+        dateComponents.day = 1
+        return Calendar.current.date(byAdding: dateComponents, to: self)!
+    }
+    
+    func nextHour() -> Date {
+        let currentComps = Calendar.current.dateComponents([.hour, .minute, .second, .nanosecond], from: self)
+        var comps = DateComponents()
+        comps.hour = 1
+        comps.minute = -currentComps.minute!
+        comps.second = -currentComps.second!
+        comps.nanosecond = -currentComps.nanosecond!
+        return Calendar.current.date(byAdding: comps, to: self)!
     }
 }
