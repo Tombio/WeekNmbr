@@ -10,11 +10,7 @@ import ClockKit
 
 class ComplicationDataSource: NSObject, CLKComplicationDataSource {
     
-    public static var date = Date() {
-        didSet {
-            debugPrint("Date updated to \(date)")
-        }
-    }
+    public static var date = Date()
     
     public func getSupportedTimeTravelDirections(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimeTravelDirections) -> Swift.Void) {
         handler([])
@@ -25,7 +21,6 @@ class ComplicationDataSource: NSObject, CLKComplicationDataSource {
     }
     
     private func createTimelineEntry(for complication: CLKComplication, forDate date: Date) -> CLKComplicationTimelineEntry? {
-        print("Create timeline entry for \(date)")
         if complication.family == .circularSmall {
             let template = CLKComplicationTemplateCircularSmallRingText()
             template.textProvider = CLKSimpleTextProvider(text: "\(date.weekNumberOfYear())")

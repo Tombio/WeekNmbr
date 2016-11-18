@@ -10,6 +10,8 @@
 		566B64441DD51C55009C6B3B /* IndexRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566B64431DD51C55009C6B3B /* IndexRequestHandler.swift */; };
 		566B64481DD51C55009C6B3B /* WeekNmbrSpotlightExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 566B64411DD51C55009C6B3B /* WeekNmbrSpotlightExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		566B644C1DD51CBC009C6B3B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A02CEC1DD25A0A00B2FCE1 /* Extension.swift */; };
+		566B64551DDC4FD5009C6B3B /* DateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566B64541DDC4FD5009C6B3B /* DateExtensionTests.swift */; };
+		566B64561DDC505B009C6B3B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A02CEC1DD25A0A00B2FCE1 /* Extension.swift */; };
 		56A02CA11DD0724900B2FCE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A02CA01DD0724900B2FCE1 /* AppDelegate.swift */; };
 		56A02CA31DD0724900B2FCE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A02CA21DD0724900B2FCE1 /* ViewController.swift */; };
 		56A02CA61DD0724900B2FCE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A02CA41DD0724900B2FCE1 /* Main.storyboard */; };
@@ -112,6 +114,7 @@
 		566B64411DD51C55009C6B3B /* WeekNmbrSpotlightExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WeekNmbrSpotlightExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		566B64431DD51C55009C6B3B /* IndexRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexRequestHandler.swift; sourceTree = "<group>"; };
 		566B64451DD51C55009C6B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		566B64541DDC4FD5009C6B3B /* DateExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensionTests.swift; sourceTree = "<group>"; };
 		56A02C9D1DD0724900B2FCE1 /* WeekNmbr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeekNmbr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A02CA01DD0724900B2FCE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56A02CA21DD0724900B2FCE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -235,6 +238,7 @@
 			children = (
 				56A02CB51DD0724900B2FCE1 /* WeekNmbrTests.swift */,
 				56A02CB71DD0724900B2FCE1 /* Info.plist */,
+				566B64541DDC4FD5009C6B3B /* DateExtensionTests.swift */,
 			);
 			path = WeekNmbrTests;
 			sourceTree = "<group>";
@@ -566,7 +570,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				566B64561DDC505B009C6B3B /* Extension.swift in Sources */,
 				56A02CB61DD0724900B2FCE1 /* WeekNmbrTests.swift in Sources */,
+				566B64551DDC4FD5009C6B3B /* DateExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

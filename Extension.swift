@@ -72,4 +72,13 @@ extension Date {
         comps.nanosecond = -currentComps.nanosecond!
         return Calendar.current.date(byAdding: comps, to: self)!
     }
+    
+    func nextMinute() -> Date {
+        let currentComps = Calendar.current.dateComponents([.second, .nanosecond], from: self)
+        var comps = DateComponents()
+        comps.minute = 1
+        comps.second = -currentComps.second!
+        comps.nanosecond = -currentComps.nanosecond!
+        return Calendar.current.date(byAdding: comps, to: self)!
+    }
 }

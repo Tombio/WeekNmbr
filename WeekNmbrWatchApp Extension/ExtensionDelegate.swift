@@ -14,8 +14,8 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
     
     func applicationDidFinishLaunching() {
         WKExtension.shared().scheduleBackgroundRefresh(withPreferredDate: Date(timeIntervalSinceNow: 3.0), userInfo: userInfo) { (error) in
-            if (error == nil) {
-                print("successfully scheduled background task, use the crown to send the app to the background and wait for handle:BackgroundTasks to fire.")
+            if(error != nil) {
+                debugPrint("Error settings background update \(error)")
             }
         }
     }
@@ -30,14 +30,17 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
     }
 
     func handle(_ backgroundTasks: Set<WKRefreshBackgroundTask>) {
-        debugPrint("Handle background tasks fired")
         for task in backgroundTasks {
             switch task {
             case let backgroundTask as WKApplicationRefreshBackgroundTask:
                 let date = Date()
                 ComplicationDataSource.date = date
-                debugPrint("Next update schedule to \(date.nextHour())")
-                WKExtension.shared().scheduleBackgroundRefresh(withPreferredDate: date.nextHour(), userInfo: nil, scheduledCompletion: { _ in })
+                if let complications = CLKComplicationServer.sharedInstance().activeComplications {
+                    for complication in complications {
+                        CLKComplicationServer.sharedInstance().reloadTimeline(for: complication)
+                    }
+                }
+                WKExtension.shared().scheduleBackgroundRefresh(withPreferredDate: date.nextMinute(), userInfo: nil, scheduledCompletion: { _ in })
                 backgroundTask.setTaskCompleted()
             default:
                 // make sure to complete unhandled task types
